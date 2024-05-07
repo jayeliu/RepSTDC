@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mmseg-geo"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "mmseg_geo"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://mirrors.cernet.edu.cn/pypi/web/simple/"
+priority = "default"
+
+
+[tool.poetry.group.dev.dependencies]
+mmcv-lite = "^2.0.1"
+mmengine = "^0.7.4"
+mmsegmentation = "^1.0.0"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+mmpretrain = "^1.0.0rc8"
+poetry2setup = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
